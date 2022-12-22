@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0557d4a5a2c54a04b259b77dcfb758b4" Name="Diagram1">
+        <EntityTypeShape EntityType="GroceryModel.discount" Width="1.5" PointX="6.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GroceryModel.order" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GroceryModel.order_item" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GroceryModel.product" Width="1.5" PointX="4.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GroceryModel.shipping" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GroceryModel.user" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GroceryModel.user_info" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="GroceryModel.FK_product_discount" ManuallyRouted="false" />
+        <AssociationConnector Association="GroceryModel.FK_order_item_order" ManuallyRouted="false" />
+        <AssociationConnector Association="GroceryModel.FK_order_shipping" ManuallyRouted="false" />
+        <AssociationConnector Association="GroceryModel.FK_order_user" ManuallyRouted="false" />
+        <AssociationConnector Association="GroceryModel.FK_order_item_product" ManuallyRouted="false" />
+        <AssociationConnector Association="GroceryModel.FK_product_user" ManuallyRouted="false" />
+        <AssociationConnector Association="GroceryModel.FK_user_info_user" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
